@@ -446,7 +446,7 @@ class MySQLTableDefinitionParser:
             r"(?: +COLLATE +(?P<collate>[\w_]+))?"
             r"(?: +(?P<notnull>(?:NOT )?NULL))?"
             r"(?: +DEFAULT +(?P<default>"
-            r"(?:NULL|'(?:''|[^'])*'|[\-\w\.\(\)]+"
+            r"(?:NULL|'(?:''|[^'])*'|b'[01]'|[\-\w\.\(\)]+"
             r"(?: +ON UPDATE [\-\w\.\(\)]+)?)"
             r"))?"
             r"(?: +(?:GENERATED ALWAYS)? ?AS +(?P<generated>\("
